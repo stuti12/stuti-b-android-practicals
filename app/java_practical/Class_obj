@@ -1,0 +1,10 @@
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println("Obj1="+myObj1.x);
+    System.out.println("Obj2="myObj2.x);
+  }
+}
