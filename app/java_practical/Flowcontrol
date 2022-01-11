@@ -1,0 +1,29 @@
+int time = 22;
+if (time < 10) {
+  System.out.println("Good morning.");
+} else if (time < 20) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+// Outputs "Good evening."
+
+int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+
+for (int i = 0; i <= 10; i = i + 2) {
+  System.out.println(i);
+}
+
+int i = 0;
+while (i < 10) {
+  if (i == 4) {
+    i++;
+    continue;
+  }
+  System.out.println(i);
+  i++;
+}
