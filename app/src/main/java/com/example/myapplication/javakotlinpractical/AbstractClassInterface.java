@@ -1,19 +1,21 @@
+package com.example.myapplication.javakotlinpractical;
+
 abstract class Shape{
-abstract void draw();
+    abstract void draw();
 }
 //In real scenario, implementation is provided by others i.e. unknown by end user
 class Rectangle extends Shape{
-void draw(){System.out.println("drawing rectangle");}
+    void draw(){System.out.println("drawing rectangle");}
 }
 class Circle1 extends Shape{
-void draw(){System.out.println("drawing circle");}
+    void draw(){System.out.println("drawing circle");}
 }
 //In real scenario, method is called by programmer or user
 class TestAbstraction1{
-public static void main(String args[]){
-Shape s=new Circle1();//In a real scenario, object is provided through method, e.g., getShape() method
-s.draw();
-}
+    public static void main(String args[]){
+        Shape s=new Circle1();//In a real scenario, object is provided through method, e.g., getShape() method
+        s.draw();
+    }
 }
 
 
@@ -21,15 +23,15 @@ interface Drawable{
     void draw();
 }
 //Implementation: by second user
-class Rectangle implements Drawable{
+class Rectangles implements Drawable{
     public void draw(){System.out.println("drawing rectangle");}
 }
-class Circle implements Drawable{
+class Circles implements Drawable{
     public void draw(){System.out.println("drawing circle");}
 }
 //Using interface: by third user
 class TestInterface1{
     public static void main(String args[]){
-        Drawable d=new Circle();//In real scenario, object is provided by method e.g. getDrawable()
+        Drawable d=new Circles();//In real scenario, object is provided by method e.g. getDrawable()
         d.draw();
     }}
