@@ -4,27 +4,16 @@ import java.util.*;
 
 fun main(args: Array<String>) {
 
-    // create an object for scanner class
-    val reader = Scanner(System.`in`)
-    print("Enter any number: ")
-
-    // read the next Integer value
-    var num = reader.nextInt()
-    var result = if ( num > 0) {
-        "$num is positive number"
+    val time = 22
+    if (time < 10) {
+        println("Good morning.")
+    } else if (time < 20) {
+        println("Good day.")
+    } else {
+        println("Good evening.")
     }
-    else if( num < 0){
-        "$num is negative number"
-    }
-    else{
-        "$num is equal to zero"
-    }
-    println(result)
 
-}
-
-//when
-/*fun main(args: Array<String>){
+//when similar to switch
     var number = 4
     var numberProvided = when(number) {
         1 -> "One"
@@ -34,18 +23,17 @@ fun main(args: Array<String>) {
         5 -> "Five"
         else -> "invalid number"
     }
-    println("You provide $numberProvided")
-}*/
+    println("\nYou provide $numberProvided")
 
-//do while
-/* fun main(args: Array<String>){
+    //dowhile
+    println("Dowhile")
     var i = 1
     do {
         println(i)
         i++
     }
     while (i<=5);
-}*/
+}
 
 //for loop
 /*fun main(args : Array<String>) {
