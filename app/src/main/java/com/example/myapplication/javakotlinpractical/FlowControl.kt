@@ -1,7 +1,5 @@
 package com.example.myapplication.javakotlinpractical
 
-package com.example.myapplication.javakotlinpractical
-
 import java.util.*;
 
 fun main(args: Array<String>) {
