@@ -1,12 +1,15 @@
 package com.example.myapplication.javakotlinpractical
 
+package com.example.myapplication.javakotlinpractical
+
 import java.util.*;
 
 fun main(args: Array<String>) {
-
+    //ifelse
+    println("If else")
     val time = 22
     if (time < 10) {
-        println("Good morning.")
+        println("\nGood morning.")
     } else if (time < 20) {
         println("Good day.")
     } else {
@@ -15,6 +18,7 @@ fun main(args: Array<String>) {
 
 //when similar to switch
     var number = 4
+    println("\nWhen")
     var numberProvided = when(number) {
         1 -> "One"
         2 -> "Two"
@@ -23,10 +27,10 @@ fun main(args: Array<String>) {
         5 -> "Five"
         else -> "invalid number"
     }
-    println("\nYou provide $numberProvided")
+    println("You provide $numberProvided")
 
     //dowhile
-    println("Dowhile")
+    println("\nDowhile")
     var i = 1
     do {
         println(i)
@@ -43,4 +47,6 @@ fun main(args: Array<String>) {
     }
 }
 */
+
+
 
