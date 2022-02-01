@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearToast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DisplayToast">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btntoast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#808080"
+        android:background="@drawable/border"
+        android:text="Toast" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btntoast2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#808080"
+        android:text="Custom Toast" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btntoast3"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#808080"
+        android:text="Material Toast" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMaterial"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#808080"
+        android:text="Material Design" />
+</LinearLayout>
