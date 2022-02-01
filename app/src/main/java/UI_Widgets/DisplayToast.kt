@@ -1,10 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.UI_Widgets
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.myapplication.R
+import com.example.myapplication.showCustomToast
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_display_toast.btnMaterial
 import kotlinx.android.synthetic.main.activity_display_toast.btnToast

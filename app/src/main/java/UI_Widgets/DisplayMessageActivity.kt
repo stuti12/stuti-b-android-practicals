@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.UI_Widgets
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,8 @@ import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.*
+import com.example.myapplication.MainActivity
+import com.example.myapplication.R
 import java.util.regex.Pattern
 
 class DisplayMessageActivity : AppCompatActivity() {

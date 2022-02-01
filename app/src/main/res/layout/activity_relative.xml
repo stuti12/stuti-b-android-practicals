@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.myapplication.Layouts.RelativeActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle_rel"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/form_text_title"
+        android:textColor="#808080"
+        android:textSize="25dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name_rel"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:hint="@string/et_name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#808080" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email_rel"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:hint="@string/et_email"
+        android:padding="10dp"
+        android:textColorHint="#808080" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_praise_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email_rel"
+        android:layout_marginHorizontal="25dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:padding="17dp"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_above="@id/et_feedback_rel"
+        android:layout_gravity="right|center"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="-80px"
+        android:layout_marginBottom="27dp"
+        android:layout_toRightOf="@id/sp_praise_rel"
+        android:layout_weight="2"
+        android:src="@drawable/drop_down" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_feedback_rel"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_praise_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:hint="@string/et_feedback"
+        android:lines="5"
+        android:padding="10dp"
+        android:textColorHint="#808080" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chk_praise_rel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/et_feedback_rel"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/white"
+        tools:ignore="NotSibling" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_remember_rel"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_feedback_rel"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/chk_praise_rel"
+        android:text="@string/tv_check"
+        android:textColor="#808080" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_feedback_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chk_praise_rel"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/ripple_bg"
+        android:text="@string/btn_send"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_rel"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_feedback_rel"
+        android:layout_marginLeft="20dp"
+        android:textColor="#808080" />
+
+</RelativeLayout>

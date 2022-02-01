@@ -11,7 +11,7 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
-            android:name=".MaterialActivity"
+            android:name=".UI_Widgets.MaterialActivity"
             android:exported="true" />
 
         <meta-data
@@ -19,11 +19,37 @@
             android:resource="@xml/edit_text_border" />
 
         <activity
-            android:name=".DisplayToast"
+            android:name=".UI_Widgets.DisplayToast"
             android:exported="true" />
         <activity
-            android:name=".DisplayMessageActivity"
+            android:name=".UI_Widgets.DisplayMessageActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.Layouts.FrameActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.Layouts.ConstraintActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.Layouts.GridActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.Layouts.TableActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.Layouts.RelativeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.Layouts.LayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/edit_text_border" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

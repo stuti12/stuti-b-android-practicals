@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffc0cb"
-    tools:context=".DisplayMessageActivity">
+    tools:context=".UI_Widgets.DisplayMessageActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
