@@ -23,4 +23,20 @@
     <string name="et_feedback">Enter Feedback...</string>
     <string name="btn_send">send feedback</string>
     <string name="tv_check">What would you like?</string>
+
+    <!-- Button title-->
+    <string name="title1">Ch-1(A)UI Form</string>
+    <string name="title2">Ch-2 Layouts</string>
+    <string name="title3">Ch-3 RecycleView And Adapter</string>
+
+    <!--RecycleView chapter button title -->
+    <string name="btn_recycleview">RecycleView</string>
+    <string name="btn_listview">ListView</string>
+    <string name="btn_item_decoration">GridView item Decoration</string>
+    <string name="btn_view_pager">View Pager</string>
+    <string name="btn_bottom_nav">Bottom Navigation</string>
+
+    <!--Listview -->
+    <string name="listview_expand">List expand</string>
+    <string name="listview_collapse">List collapsed</string>
 </resources>

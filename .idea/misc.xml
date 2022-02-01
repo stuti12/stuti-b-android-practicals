@@ -14,11 +14,13 @@
         <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.19280442804428044" />
         <entry key="app/src/main/res/layout/activity_display_toast.xml" value="0.10885416666666667" />
         <entry key="app/src/main/res/layout/activity_feedback.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_frame.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_grid.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_item_decor_grid.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_layout.xml" value="0.10677083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_recycle.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/activity_recycle_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_relative.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_table.xml" value="0.1" />
@@ -28,7 +30,10 @@
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/fragment_send.xml" value="0.1359375" />
         <entry key="app/src/main/res/layout/fragment_send_message.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_view.xml" value="0.121875" />
         <entry key="app/src/main/res/layout/fragment_view_message.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu2.xml" value="0.11875" />
