@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ConstraintActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle_constraint"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Enter Feedback details to send to the developer"
+        android:textColor="#808080"
+        android:textSize="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="106dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name_cons"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/border"
+        android:hint="Your name"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle_constraint"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email_cons"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/border"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/et_name_cons"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_praise_cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintTop_toBottomOf="@id/et_email_cons"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_feedback_cons"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:hint="Enter Feedback.."
+        android:lines="5"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/sp_praise_cons"
+        tools:layout_editor_absoluteX="-62dp" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chk_praise_cons"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/et_feedback_cons"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_remember_cons"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Would you like ?"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/chk_praise_cons"
+        app:layout_constraintTop_toBottomOf="@id/et_feedback_cons" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_feedback_cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/ripple_bg"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_remember_cons" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_cons"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Enter"
+        android:textAlignment="center"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/btn_feedback_cons"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_praise_cons"
+        app:layout_constraintTop_toTopOf="@+id/et_email_cons"
+        app:srcCompat="@drawable/drop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

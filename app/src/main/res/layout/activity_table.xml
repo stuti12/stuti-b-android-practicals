@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TableActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/bold_20_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter Feedback details to send to the developer"
+            android:textColor="#808080"
+            android:textSize="25dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name_tbl"
+            style="@style/bold_20_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="100px"
+            android:background="@drawable/border"
+            android:focusable="true"
+            android:hint="Your Name"
+            android:padding="10dp"
+            android:textColorHint="#808080" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_email_tbl"
+            style="@style/bold_20_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:width="100px"
+            android:background="@drawable/border"
+            android:focusable="true"
+            android:hint="Enter Email"
+            android:padding="10dp"
+            android:textColorHint="#808080" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border">
+
+        <Spinner
+            android:id="@+id/sp_praise_tbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="10dp"
+            android:spinnerMode="dialog"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/drop_down" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_feedback_tbl"
+            style="@style/bold_20_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:focusable="true"
+            android:hint="Feedback Details"
+            android:lines="5"
+            android:padding="10dp"
+            android:textColorHint="#808080" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="3dp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chk_praise"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:text="would you like?"
+            android:textColor="@color/white"
+            app:buttonTint="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView2"
+            style="@style/bold_20_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#808080" />
+    </TableRow>
+</TableLayout>

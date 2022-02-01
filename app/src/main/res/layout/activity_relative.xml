@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RelativeActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle_rel"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Feedback details to send to the developer"
+        android:textColor="#808080"
+        android:textSize="25dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name_rel"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:hint="Enter User name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#808080" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email_rel"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_praise_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email_rel"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:spinnerMode="dropdown"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_above="@id/et_feedback_rel"
+        android:layout_gravity="right"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/sp_praise_rel"
+        android:layout_weight="2"
+        android:src="@drawable/drop_down" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_feedback_rel"
+        style="@style/bold_20_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_praise_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:focusable="true"
+        android:hint="Enter Email"
+        android:lines="5"
+        android:padding="10dp"
+        android:textColorHint="#808080" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chk_praise_rel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/et_feedback_rel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        tools:ignore="NotSibling" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_remember_rel"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_feedback_rel"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/chk_praise_rel"
+        android:text="Would you like ?"
+        android:textColor="#808080" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_feedback_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chk_praise_rel"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/white"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_rel"
+        style="@style/bold_20_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_feedback_rel"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Feedback  developer"
+        android:textColor="#808080" />
+
+</RelativeLayout>
