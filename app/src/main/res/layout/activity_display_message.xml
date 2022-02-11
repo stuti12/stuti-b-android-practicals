@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc0cb"
+    tools:context=".DisplayMessageActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/login_img"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@drawable/login" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/login_name"
+                style="@style/bold_20_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_img"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Enter User name"
+                android:padding="10dp"
+                android:textColorHint="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/login_email"
+                style="@style/bold_20_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Your Email "
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/login_password"
+                style="@style/bold_20_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_email"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:id="@+id/show_pass_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="215dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/show_pswd" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_password"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvgender"
+                    style="@style/bold_18_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login_password"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Gender" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login_password"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/tvgender"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="male" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/rbmale"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="female"
+                    tools:ignore="OnClick" />
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chk_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_gender"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_remember"
+                style="@style/bold_16_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/login_button"
+                android:layout_below="@id/rg_gender"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="22dp"
+                android:text="Remember me"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/chk_gender"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="@color/white"
+                android:foreground="@drawable/ripple_bg"
+                android:text="login"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back_button"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/chk_gender"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/login_button"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="@color/white"
+                android:foreground="@drawable/ripple_bg"
+                android:text="back"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_toast"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/chk_gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/back_button"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="@color/white"
+                android:foreground="@drawable/ripple_bg"
+                android:text="Toast" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
