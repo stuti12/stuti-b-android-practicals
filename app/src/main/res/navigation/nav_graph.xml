@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.example.myapplication.Fragment.SendFragment"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send">
+        <action
+            android:id="@+id/action_sendFragment_to_viewFragment"
+            app:popUpTo="@+id/galleryFragment"
+            app:destination="@id/viewFragment" />
+        <argument
+            android:name="nam"
+            android:defaultValue="Send Fragment"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.example.myapplication.Fragment.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view">
+        <action
+            android:id="@+id/action_viewFragment_to_sendFragment"
+            app:popUpTo="@+id/sendFragment"
+            app:destination="@id/sendFragment" />
+        <argument
+            android:name="name"
+            android:defaultValue="view Fragment"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.myapplication.Fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_viewFragment"
+            app:popUpTo="@id/galleryFragment"
+            app:destination="@id/viewFragment" />
+    </fragment>
+</navigation>

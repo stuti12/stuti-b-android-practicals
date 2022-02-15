@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
-
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -89,6 +89,19 @@
         <activity
             android:name="com.example.myapplication.RecycleViewPractical.RecycleView.RecycleViewActivity"
             android:exported="false" />
+        <activity
+            android:name=".Fragment.JetpackActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Fragment.FragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.FragmentContainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.BottomNavigationActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
