@@ -9,6 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
+        <activity
+            android:name=".MaterialActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/edit_text_border" />
+
+        <activity
+            android:name=".DisplayToast"
+            android:exported="true" />
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
