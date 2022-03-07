@@ -9,4 +9,18 @@
         <item>Vulture</item>
         <item>WoodPecker</item>
     </string-array>
+    <!-- Layout file -->
+    <string name="btn_linear">Linear</string>
+    <string name="btn_relative">Relative</string>
+    <string name="btn_grid">Grid</string>
+    <string name="btn_table">table</string>
+    <string name="btn_constraint">Constraint</string>
+    <string name="btn_frame">Frame</string>
+    <!-- layout form-->
+    <string name="form_text_title" value="Enter Feedback details to send to the developer" />
+    <string name="et_name">your name</string>
+    <string name="et_email">Your EMail</string>
+    <string name="et_feedback">Enter Feedback...</string>
+    <string name="btn_send">send feedback</string>
+    <string name="tv_check">What would you like?</string>
 </resources>

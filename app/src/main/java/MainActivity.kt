@@ -3,9 +3,9 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.Toast
+import com.example.myapplication.Layouts.LayoutActivity
+import com.example.myapplication.UI_Widgets.DisplayMessageActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +14,12 @@ class MainActivity : AppCompatActivity() {
         val btnForm : Button = findViewById(R.id.btnForm)
         btnForm.setOnClickListener {
             val intent = Intent(this@MainActivity, DisplayMessageActivity::class.java)
+            startActivity(intent)
+        }
+        val btnFeedback : Button = findViewById(R.id.btnFeedback)
+
+        btnFeedback.setOnClickListener {
+            val intent = Intent(this@MainActivity, LayoutActivity::class.java)
             startActivity(intent)
         }
     }

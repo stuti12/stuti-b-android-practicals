@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffc0cb"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnForm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnFeedback"
+       app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="Login Form" />
+        android:text="UI Login Form" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFeedback"
+        app:layout_constraintStart_toStartOf="@id/btnForm"
+    app:layout_constraintTop_toBottomOf="@id/btnForm"
+        app:layout_constraintEnd_toEndOf="@id/btnForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="UI Layout" />
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

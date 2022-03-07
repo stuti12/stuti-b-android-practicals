@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.UI_Widgets
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.*
+import com.example.myapplication.R
 import kotlinx.android.synthetic.main.activity_material.*
 import java.util.regex.Pattern
 
