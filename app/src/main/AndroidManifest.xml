@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
@@ -9,7 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-
+        <activity
+            android:name=".com.example.myapplication.OtherVIew.nestedScrollView.ScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".com.example.myapplication.OtherVIew.webView.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".com.example.myapplication.OtherVIew.SearchView.SearchViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtherVIew.OtherViewActivity"
+            android:exported="false" />
         <activity
             android:name=".UI_Widgets.MaterialActivity"
             android:exported="true" />
@@ -25,25 +40,22 @@
             android:name=".UI_Widgets.DisplayMessageActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.myapplication.Layouts.FrameActivity"
+            android:name=".Layouts.FrameActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.ConstraintActivity"
+            android:name=".Layouts.ConstraintActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.GridActivity"
+            android:name=".Layouts.GridActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.TableActivity"
+            android:name=".Layouts.TableActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.RelativeActivity"
+            android:name=".Layouts.RelativeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.LayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FeedbackActivity"
+            android:name=".Layouts.LayoutActivity"
             android:exported="false" />
 
         <meta-data

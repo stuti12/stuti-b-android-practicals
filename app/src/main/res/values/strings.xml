@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">My Application</string>
     <string-array name="birds">
         <item>crane</item>
         <item>Cuckoo</item>
@@ -8,24 +9,6 @@
         <item>Vulture</item>
         <item>WoodPecker</item>
     </string-array>
-    <string name="app_name">My Application</string>
-    <string name="title_activity_bottom_nav">BottomNavActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_main2">MainActivity2</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <!-- layout form-->
-    <string name="form_text_title" value="Enter Feedback details to send to the developer" />
-    <string name="et_name">your name</string>
-    <string name="et_email">Your EMail</string>
-    <string name="et_feedback">Enter Feedback...</string>
-    <string name="tv_check">What would you like?</string>
     <!-- Layout file -->
     <string name="btn_linear">Linear</string>
     <string name="btn_relative">Relative</string>
@@ -33,6 +16,30 @@
     <string name="btn_table">table</string>
     <string name="btn_constraint">Constraint</string>
     <string name="btn_frame">Frame</string>
+    <!-- layout form-->
+    <string name="form_text_title" value="Enter Feedback details to send to the developer" />
+    <string name="et_name">your name</string>
+    <string name="et_email">Your EMail</string>
+    <string name="et_feedback">Enter Feedback...</string>
+    <string name="btn_send">send feedback</string>
+    <string name="tv_check">What would you like?</string>
+    <string name="btn_form">Chapter-1 UI FOrm</string>
+    <string name="btn_Layout">Chapter-2 Layout</string>
+    <string name="btn_search_title">Ch-3(E) Other Important Views</string>
+
+    <!--Other Views Button -->
+    <string name="btn_search">SearchView</string>
+    <string name="btn_webview">Webview</string>
+    <string name="btn_scrollview">Nested Scrollview</string>
+    <string name="no_image">No Image</string>
+    <string name="nested_scroll_text">Tutorialwing.com presents tutorial on NestedScrollView!
+        NestedScrollView is just like ScrollView, but it supports acting as both a nested
+        scrolling parent and child on both new and old versions of Android. Nested scrolling
+        is enabled by default. NestedScrollView is used when there is need for scrolling inside
+        another scrolling view. Normally this would be difficult task because system would be
+        unable to decide which view to scroll. This is where NestedScrollView comes into role.
+    </string>
+
 
     <!-- Fragment Chapter-->
     <string name="menu_home">Home</string>
@@ -66,10 +73,13 @@
     <string name="title1">Ch-1(A)UI Form</string>
     <string name="title2">Ch-2 Layouts</string>
     <string name="title3">Ch-3 RecycleView And Adapter</string>
+    <string name="title4">Ch-4 Fragment,Intent Jetpack</string>
+    <string name="title5">Ch-2(E) Other Important Views</string>
     <!-- String used in fragment name-->
     <string name="fragment1_title">Gallery</string>
     <string name="fragment2_title">Send message</string>
     <string name="fragment3_title">View message</string>
-    <string name="btn_send">send</string>
     <string name="et_hint">Enter message</string>
+
+    <!-- Other view-->
 </resources>
