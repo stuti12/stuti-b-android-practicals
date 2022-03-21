@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="UI Login Form" />
+        android:text="@string/btn_ui" />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnFeedback"
         app:layout_constraintStart_toStartOf="@id/btnForm"
@@ -28,7 +28,19 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="UI Layout" />
+        android:text="@string/btn_layout" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnWebService"
+        app:layout_constraintStart_toStartOf="@id/btnFeedback"
+        app:layout_constraintTop_toBottomOf="@id/btnFeedback"
+        app:layout_constraintEnd_toEndOf="@id/btnFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="@string/btn_webService" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
