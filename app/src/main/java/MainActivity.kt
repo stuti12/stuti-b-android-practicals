@@ -1,14 +1,15 @@
 package com.example.myapplication
 
-import com.example.myapplication.OtherVIew.OtherViewActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.FragmentActivity
 import com.example.myapplication.Layouts.LayoutActivity
+import com.example.myapplication.OtherVIew.OtherViewActivity
 import com.example.myapplication.RecycleViewPractical.RecycleActivity
 import com.example.myapplication.UI_Widgets.DisplayMessageActivity
+import com.example.myapplication.webService.WebServiceActivity
 import kotlinx.android.synthetic.main.activity_main.btnFeedback
 import kotlinx.android.synthetic.main.activity_main.btnForm
 import kotlinx.android.synthetic.main.activity_main.btnFragment
@@ -23,14 +24,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setData() {
+        setListener()
+    }
+   private fun setListener() {
+        val btnForm : Button = findViewById(R.id.btnForm)
         btnForm.setOnClickListener {
             val intent = Intent(this@MainActivity, DisplayMessageActivity::class.java)
             startActivity(intent)
         }
         btnFeedback.setOnClickListener {
             val intent = Intent(
-                this@MainActivity,
-                com.example.myapplication.layout.LayoutActivity::class.java
+                this@MainActivity,LayoutActivity::class.java
             )
             startActivity(intent)
         }
@@ -48,5 +52,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, OtherViewActivity::class.java)
             startActivity(intent)
         }
+        val btnWebService : Button = findViewById(R.id.btnWebService)
+
+        btnWebService.setOnClickListener {
+            val intent = Intent(this@MainActivity, WebServiceActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }
