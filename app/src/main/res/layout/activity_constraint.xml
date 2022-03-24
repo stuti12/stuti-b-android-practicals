@@ -7,6 +7,7 @@
     android:background="@drawable/background"
     tools:context="com.example.myapplication.Layouts.ConstraintActivity">
 
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvTitle_constraint"
         style="@style/bold_20_text"
@@ -129,14 +130,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text=""
         android:textAlignment="center"
         android:textColor="#808080"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_feedback_cons" />
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="32dp"
         android:layout_height="65dp"

@@ -7,7 +7,7 @@
     android:background="@drawable/background"
     android:measureAllChildren="true"
     android:orientation="vertical"
-    tools:context="com.example.myapplication.Layouts.FeedbackActivity">
+     tools:context="com.example.myapplication.Layouts.FeedbackActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"

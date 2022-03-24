@@ -51,6 +51,45 @@
             android:resource="@xml/edit_text_border" />
 
         <activity
+            android:name=".layout.FrameActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.RecycleViewPractical.BottomNavigation.BottomNavActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.RecycleViewPractical.ViewPager.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.RecycleViewPractical.ItemDecoration.ItemDecorGridActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.RecycleViewPractical.ListView.ListViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecycleViewPractical.RecycleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".layout.TableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.ConstraintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.GridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.RelativeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".layout.LayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.myapplication.RecycleViewPractical.RecycleView.RecycleViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
