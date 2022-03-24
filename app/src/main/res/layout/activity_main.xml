@@ -5,43 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnForm"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnFeedback"
-       app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="@string/title1" />
+        android:text="@string/title1"
+        app:layout_constraintBottom_toTopOf="@id/btnFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnFeedback"
-        app:layout_constraintStart_toStartOf="@id/btnForm"
-    app:layout_constraintTop_toBottomOf="@id/btnForm"
-        app:layout_constraintEnd_toEndOf="@id/btnForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="@string/title2" />
-
+        android:text="@string/title2"
+        app:layout_constraintEnd_toEndOf="@id/btnForm"
+        app:layout_constraintStart_toStartOf="@id/btnForm"
+        app:layout_constraintTop_toBottomOf="@id/btnForm" />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRecycle"
-        app:layout_constraintStart_toStartOf="@id/btnForm"
-        app:layout_constraintTop_toBottomOf="@id/btnFeedback"
-        app:layout_constraintEnd_toEndOf="@id/btnForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="@string/title3" />
+        android:text="@string/title3"
+        app:layout_constraintEnd_toEndOf="@id/btnFeedback"
+        app:layout_constraintStart_toStartOf="@id/btnFeedback"
+        app:layout_constraintTop_toBottomOf="@id/btnFeedback" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="@string/title2"
+        app:layout_constraintEnd_toEndOf="@id/btnRecycle"
+        app:layout_constraintStart_toStartOf="@id/btnRecycle"
+        app:layout_constraintTop_toBottomOf="@id/btnRecycle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

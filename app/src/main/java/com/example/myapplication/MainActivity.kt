@@ -3,17 +3,21 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.Fragment.FragmentActivity
 import com.example.myapplication.RecycleViewPractical.RecycleActivity
 import com.example.myapplication.UI_Widgets.DisplayMessageActivity
 import com.example.myapplication.layout.LayoutActivity
 import kotlinx.android.synthetic.main.activity_main.btnFeedback
 import kotlinx.android.synthetic.main.activity_main.btnForm
+import kotlinx.android.synthetic.main.activity_main.btnFragment
 import kotlinx.android.synthetic.main.activity_main.btnRecycle
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        showFragment()
+
 
        intentView()
     }
@@ -31,4 +35,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    private fun showFragment() {
+      btnFragment.setOnClickListener {
+           val intent = Intent(this@MainActivity, FragmentActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
 }

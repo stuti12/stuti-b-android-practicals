@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
     <string-array name="birds">
         <item>crane</item>
         <item>Cuckoo</item>
@@ -9,6 +8,24 @@
         <item>Vulture</item>
         <item>WoodPecker</item>
     </string-array>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- layout form-->
+    <string name="form_text_title" value="Enter Feedback details to send to the developer" />
+    <string name="et_name">your name</string>
+    <string name="et_email">Your EMail</string>
+    <string name="et_feedback">Enter Feedback...</string>
+    <string name="tv_check">What would you like?</string>
     <!-- Layout file -->
     <string name="btn_linear">Linear</string>
     <string name="btn_relative">Relative</string>
@@ -16,18 +33,12 @@
     <string name="btn_table">table</string>
     <string name="btn_constraint">Constraint</string>
     <string name="btn_frame">Frame</string>
-    <!-- layout form-->
-    <string name="form_text_title" value="Enter Feedback details to send to the developer" />
-    <string name="et_name">your name</string>
-    <string name="et_email">Your EMail</string>
-    <string name="et_feedback">Enter Feedback...</string>
-    <string name="btn_send">send feedback</string>
-    <string name="tv_check">What would you like?</string>
 
-    <!-- Button title-->
-    <string name="title1">Ch-1(A)UI Form</string>
-    <string name="title2">Ch-2 Layouts</string>
-    <string name="title3">Ch-3 RecycleView And Adapter</string>
+    <!-- Fragment Chapter-->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_bottom">BottomActivity</string>
 
     <!--RecycleView chapter button title -->
     <string name="btn_recycleview">RecycleView</string>
@@ -39,4 +50,26 @@
     <!--Listview -->
     <string name="listview_expand">List expand</string>
     <string name="listview_collapse">List collapsed</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_chap4_title">Chapter-4 Fragment</string>
+    <string name="btn_chap4_jetpack">Jetpack</string>
+    <string name="btn_chap4_fragmentContainer">Fragment Container</string>
+
+    <!-- Button title-->
+    <string name="title1">Ch-1(A)UI Form</string>
+    <string name="title2">Ch-2 Layouts</string>
+    <string name="title3">Ch-3 RecycleView And Adapter</string>
+    <!-- String used in fragment name-->
+    <string name="fragment1_title">Gallery</string>
+    <string name="fragment2_title">Send message</string>
+    <string name="fragment3_title">View message</string>
+    <string name="btn_send">send</string>
+    <string name="et_hint">Enter message</string>
 </resources>

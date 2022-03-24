@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SendFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_msg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="200dp"
+        android:hint="@string/et_hint" />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="120px" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_send_message_jetpack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btn_send" />
+
+</FrameLayout>
