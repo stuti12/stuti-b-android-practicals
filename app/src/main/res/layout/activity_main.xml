@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#808080"
+        android:backgroundTint="@color/backgroung_button"
         android:text="@string/title1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_centerVertical="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#808080"
+        android:backgroundTint="@color/backgroung_button"
         android:text="@string/title2"
         app:layout_constraintEnd_toEndOf="@id/btnForm"
         app:layout_constraintStart_toStartOf="@id/btnForm"
@@ -38,7 +38,7 @@
         android:layout_centerVertical="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#808080"
+        android:backgroundTint="@color/backgroung_button"
         android:text="@string/title3"
         app:layout_constraintEnd_toEndOf="@id/btnFeedback"
         app:layout_constraintStart_toStartOf="@id/btnFeedback"
@@ -56,6 +56,45 @@
         app:layout_constraintEnd_toEndOf="@id/btnFeedback"
         app:layout_constraintStart_toStartOf="@id/btnFeedback"
         app:layout_constraintTop_toBottomOf="@id/btnRecycle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOtherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="@string/title5"
+        app:layout_constraintEnd_toEndOf="@id/btnFragment"
+        app:layout_constraintStart_toStartOf="@id/btnFragment"
+        app:layout_constraintTop_toBottomOf="@id/btnFragment" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnWebService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="@string/title6"
+        app:layout_constraintEnd_toEndOf="@id/btnFeedback"
+        app:layout_constraintStart_toStartOf="@id/btnFeedback"
+        app:layout_constraintTop_toBottomOf="@id/btnOtherView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnArchitecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/backgroung_button"
+        android:text="@string/title7"
+        app:layout_constraintEnd_toEndOf="@id/btnFragment"
+        app:layout_constraintStart_toStartOf="@id/btnFragment"
+        app:layout_constraintTop_toBottomOf="@id/btnWebService" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnOtherView"

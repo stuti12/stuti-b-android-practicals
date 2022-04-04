@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".architecture.mvvm.view.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".architecture.mvp.view.ArchitectureSignup"
+            android:exported="false" />
+        <activity
+            android:name=".architecture.mvc.view.ArchitectureLogin"
+            android:exported="false" />
+        <activity
+            android:name=".architecture.ArchitectureActivity"
+            android:exported="false" />
+        <activity
             android:name=".webService.retrofit.ManualJsonParseActivity"
             android:exported="false" />
         <activity
@@ -24,10 +36,7 @@
         <activity
             android:name=".com.example.myapplication.webService.retrofit.UserListActivity"
             android:exported="false" />
-        <activity
-            android:name=".com.example.myapplication.webService.retrofit.RetrofitActivity"
-            android:exported="false" />
-        <activity
+         <activity
             android:name=".webService.LoginActivity"
             android:exported="true" />
         <activity
@@ -48,9 +57,6 @@
         <activity
             android:name=".OtherVIew.OtherViewActivity"
             android:exported="false" />
-        <activity
-            android:name=".UI_Widgets.MaterialActivity"
-            android:exported="true" />
 
         <meta-data
             android:name="com.google.android.actions"
@@ -69,17 +75,10 @@
             android:name=".Layouts.ConstraintActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.GridActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.myapplication.Layouts.TableActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Layouts.RelativeActivity"
+            android:name=".Layouts.GridActivity"
             android:exported="false" />
         <activity
             android:name=".Layouts.LayoutActivity"
-            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.actions"
@@ -89,16 +88,16 @@
             android:name=".layout.FrameActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.BottomNavigation.BottomNavActivity"
+            android:name=".RecycleViewPractical.BottomNavigation.BottomNavActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.ViewPager.ViewPagerActivity"
+            android:name=".RecycleViewPractical.ViewPager.ViewPagerActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.ItemDecoration.ItemDecorGridActivity"
+            android:name=".RecycleViewPractical.ItemDecoration.ItemDecorGridActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.ListView.ListViewActivity"
+            android:name=".RecycleViewPractical.ListView.ListViewActivity"
             android:exported="true" />
         <activity
             android:name=".RecycleViewPractical.RecycleActivity"
@@ -122,7 +121,7 @@
             android:name=".layout.LayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.RecycleView.RecycleViewActivity"
+            android:name=".RecycleViewPractical.RecycleView.RecycleViewActivity"
             android:exported="false" />
         <activity
             android:name=".Fragment.JetpackActivity"
