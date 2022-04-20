@@ -6,7 +6,9 @@ import android.os.Bundle
 import com.example.myapplication.Fragment.FragmentActivity
 import com.example.myapplication.RecycleViewPractical.RecycleActivity
 import com.example.myapplication.UI_Widgets.DisplayMessageActivity
+import com.example.myapplication.designSupport.DesignSupportActivity
 import com.example.myapplication.layout.LayoutActivity
+import kotlinx.android.synthetic.main.activity_main.btnDesignSupport
 import kotlinx.android.synthetic.main.activity_main.btnFeedback
 import kotlinx.android.synthetic.main.activity_main.btnForm
 import kotlinx.android.synthetic.main.activity_main.btnFragment
@@ -39,6 +41,10 @@ class MainActivity : AppCompatActivity() {
     private fun showFragment() {
       btnFragment.setOnClickListener {
            val intent = Intent(this@MainActivity, FragmentActivity::class.java)
+            startActivity(intent)
+        }
+        btnDesignSupport.setOnClickListener {
+            val intent = Intent(this@MainActivity, DesignSupportActivity::class.java)
             startActivity(intent)
         }
     }

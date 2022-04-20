@@ -56,5 +56,17 @@
         app:layout_constraintEnd_toEndOf="@id/btnRecycle"
         app:layout_constraintStart_toStartOf="@id/btnRecycle"
         app:layout_constraintTop_toBottomOf="@id/btnRecycle" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDesignSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="@string/title2"
+        app:layout_constraintEnd_toEndOf="@id/btnRecycle"
+        app:layout_constraintStart_toStartOf="@id/btnRecycle"
+        app:layout_constraintTop_toBottomOf="@id/btnFragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

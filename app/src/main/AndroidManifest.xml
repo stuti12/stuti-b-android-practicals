@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-
+        <activity
+            android:name=".designSupport.DesignSupportActivity"
+            android:exported="false" />
         <activity
             android:name=".UI_Widgets.MaterialActivity"
             android:exported="true" />
@@ -25,22 +29,22 @@
             android:name=".UI_Widgets.DisplayMessageActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.myapplication.Layouts.FrameActivity"
+            android:name=".Layouts.FrameActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.ConstraintActivity"
+            android:name=".Layouts.ConstraintActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.GridActivity"
+            android:name=".Layouts.GridActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.TableActivity"
+            android:name=".Layouts.TableActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.RelativeActivity"
+            android:name=".Layouts.RelativeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.Layouts.LayoutActivity"
+            android:name=".Layouts.LayoutActivity"
             android:exported="false" />
         <activity
             android:name=".FeedbackActivity"
@@ -54,16 +58,16 @@
             android:name=".layout.FrameActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.BottomNavigation.BottomNavActivity"
+            android:name=".RecycleViewPractical.BottomNavigation.BottomNavActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.ViewPager.ViewPagerActivity"
+            android:name=".RecycleViewPractical.ViewPager.ViewPagerActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.ItemDecoration.ItemDecorGridActivity"
+            android:name=".RecycleViewPractical.ItemDecoration.ItemDecorGridActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.ListView.ListViewActivity"
+            android:name=".RecycleViewPractical.ListView.ListViewActivity"
             android:exported="true" />
         <activity
             android:name=".RecycleViewPractical.RecycleActivity"
@@ -87,7 +91,7 @@
             android:name=".layout.LayoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.myapplication.RecycleViewPractical.RecycleView.RecycleViewActivity"
+            android:name=".RecycleViewPractical.RecycleView.RecycleViewActivity"
             android:exported="false" />
         <activity
             android:name=".Fragment.JetpackActivity"
