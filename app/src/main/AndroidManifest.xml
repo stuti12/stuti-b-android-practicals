@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".designSupport.ScrollBasedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".designSupport.LayoutBasedActivity"
+            android:exported="false" />
+        <activity
             android:name=".designSupport.DesignSupportActivity"
             android:exported="false" />
         <activity

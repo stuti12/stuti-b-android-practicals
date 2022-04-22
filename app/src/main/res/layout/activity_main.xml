@@ -52,7 +52,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:backgroundTint="#808080"
-        android:text="@string/title4"
         app:layout_constraintEnd_toEndOf="@id/btnRecycle"
         app:layout_constraintStart_toStartOf="@id/btnRecycle"
         app:layout_constraintTop_toBottomOf="@id/btnRecycle" />
