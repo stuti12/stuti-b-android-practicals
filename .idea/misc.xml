@@ -8,6 +8,10 @@
         <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.11041666666666666" />
         <entry key="app/src/main/res/drawable/spinner.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_architecture.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/activity_architecture_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_architecture_mvvm_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_architecture_signup.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/activity_bottom_nav.xml" value="0.13645833333333332" />
         <entry key="app/src/main/res/layout/activity_bottom_navigation.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.1" />
@@ -21,12 +25,18 @@
         <entry key="app/src/main/res/layout/activity_item_decor_grid.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_layout.xml" value="0.10677083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_permission.xml" value="0.15260416666666668" />
         <entry key="app/src/main/res/layout/activity_recycle.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/activity_recycle_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_relative.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_view.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/activity_table.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/ch3e_activity_scroll_view.xml" value="0.12447916666666667" />
+        <entry key="app/src/main/res/layout/ch3e_activity_web_view.xml" value="0.12447916666666667" />
+        <entry key="app/src/main/res/layout/ch4_list.xml" value="0.10104166666666667" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.15" />
         <entry key="app/src/main/res/layout/custom_grid_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/example_item.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.15" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
