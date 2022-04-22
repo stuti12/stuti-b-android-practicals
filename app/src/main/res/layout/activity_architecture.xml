@@ -4,44 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.FragmentActivity">
+    tools:context=".architecture.ArchitectureActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnFragmentSimple"
+        android:id="@+id/btnMVC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="60dp"
         android:layout_marginRight="10dp"
         android:background="@color/background_inner"
-        android:text="@string/btn_chap4_title"
+        android:text="@string/btnMVC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnFragmentFragmentcontainer"
+        android:id="@+id/btnMVP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:background="@color/background_inner"
-        android:text="@string/btn_chap4_fragmentContainer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnFragmentSimple" />
+        android:text="@string/btnMVP"
+        app:layout_constraintEnd_toEndOf="@id/btnMVC"
+        app:layout_constraintStart_toStartOf="@id/btnMVC"
+        app:layout_constraintTop_toBottomOf="@id/btnMVC" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnFragmentJetpack"
+        android:id="@+id/btnMVVM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:background="@color/background_inner"
-        android:text="@string/btn_chap4_jetpack"
-        app:layout_constraintEnd_toEndOf="@id/btnFragmentSimple"
-        app:layout_constraintStart_toStartOf="@id/btnFragmentSimple"
-        app:layout_constraintTop_toBottomOf="@id/btnFragmentFragmentcontainer" />
+        android:text="@string/btnMVVM"
+        app:layout_constraintEnd_toEndOf="@id/btnMVP"
+        app:layout_constraintStart_toStartOf="@id/btnMVP"
+        app:layout_constraintTop_toBottomOf="@id/btnMVP" />
 </androidx.constraintlayout.widget.ConstraintLayout>

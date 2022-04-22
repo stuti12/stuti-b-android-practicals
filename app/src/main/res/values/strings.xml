@@ -98,11 +98,39 @@
     <string name="title4">Ch-4 Fragment,Intent Jetpack</string>
     <string name="title5">Ch-2(E) Other Important Views</string>
     <string name="title6">Ch- 5Web Service</string>
+    <string name="title7">Ch-6 Architecture</string>
     <!-- String used in fragment name-->
     <string name="fragment1_title">Gallery</string>
     <string name="fragment2_title">Send message</string>
     <string name="fragment3_title">View message</string>
-    <string name="et_hint">Enter message</string>
+     <string name="et_hint">Enter message</string>
+
+    <!-- Other view-->
+    <string name="logoText">App Logo</string>
+    <string name="fNameText">First Name</string>
+    <string name="lNameText">Last Name</string>
+    <string name="emailText">Email</string>
+    <string name="departmentText">Select Department</string>
+    <string name="dont_have_account">Do not have an Account? Sign UP</string>
+
+    <!-- String in Architecture chapter-->
+    <string name="btnMVC">MVC</string>
+    <string name="btnMVP">MVP</string>
+    <string name="btnMVVM">MVVM</string>
+    <string name="btnHandler">Handler</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone number</string>
+    <string name="emptyUsernameError">Email should not be empty.</string>
+    <string name="invalidPasswordError">Please Enter valid Password</string>
+    <string name="invalidUsernameError">Email valid email.</string>
+    <string name="password_length">Password must be greater than 8 character</string>
+    <string name="phone_length">Phone number must contain 10 Digit</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="success">Login Success</string>
+
 
     <!-- Other view-->
 </resources>
