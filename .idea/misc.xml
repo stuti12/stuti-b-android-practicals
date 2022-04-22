@@ -14,7 +14,10 @@
         <entry key="app/src/main/res/layout/activity_architecture_signup.xml" value="0.12273550724637682" />
         <entry key="app/src/main/res/layout/activity_bottom_nav.xml" value="0.13645833333333332" />
         <entry key="app/src/main/res/layout/activity_bottom_navigation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_chap5_add_user.xml" value="0.12590579710144928" />
+        <entry key="app/src/main/res/layout/activity_chap5_user_details_item.xml" value="0.13949275362318841" />
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_designsupport_design_support.xml" value="0.15677083333333333" />
         <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.19280442804428044" />
         <entry key="app/src/main/res/layout/activity_display_toast.xml" value="0.10885416666666667" />
         <entry key="app/src/main/res/layout/activity_feedback.xml" value="0.1" />
@@ -31,6 +34,8 @@
         <entry key="app/src/main/res/layout/activity_relative.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_search_view.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/activity_table.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_web_service.xml" value="0.121875" />
         <entry key="app/src/main/res/layout/ch3e_activity_scroll_view.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/ch3e_activity_web_view.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/ch4_list.xml" value="0.10104166666666667" />
