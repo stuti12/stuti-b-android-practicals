@@ -66,6 +66,7 @@
     <string name="title1">Ch-1(A)UI Form</string>
     <string name="title2">Ch-2 Layouts</string>
     <string name="title3">Ch-3 RecycleView And Adapter</string>
+    <string name="title8"> Ch-7 Design Support</string>
     <!-- String used in fragment name-->
     <string name="fragment1_title">Gallery</string>
     <string name="fragment2_title">Send message</string>
