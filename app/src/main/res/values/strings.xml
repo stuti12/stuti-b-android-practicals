@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
     <string-array name="birds">
         <item>crane</item>
         <item>Cuckoo</item>
@@ -26,7 +25,6 @@
     <string name="et_name">your name</string>
     <string name="et_email">Your EMail</string>
     <string name="et_feedback">Enter Feedback...</string>
-    <string name="btn_send">send feedback</string>
     <string name="tv_check">What would you like?</string>
 
     <!--Web Service-->
@@ -95,6 +93,7 @@
     <string name="title1">Ch-1(A)UI Form</string>
     <string name="title2">Ch-2 Layouts</string>
     <string name="title3">Ch-3 RecycleView And Adapter</string>
+    <string name="ch6">Ch-6 Permission Model </string>
     <string name="title4">Ch-4 Fragment,Intent Jetpack</string>
     <string name="title5">Ch-2(E) Other Important Views</string>
     <string name="title6">Ch- 5Web Service</string>
@@ -103,7 +102,6 @@
     <string name="fragment1_title">Gallery</string>
     <string name="fragment2_title">Send message</string>
     <string name="fragment3_title">View message</string>
-     <string name="et_hint">Enter message</string>
 
     <!-- Other view-->
     <string name="logoText">App Logo</string>
@@ -133,4 +131,13 @@
 
 
     <!-- Other view-->
+    <string name="btn_send">send</string>
+    <string name="et_hint">Enter message</string>
+
+    <!-- String in Permission model chapter-->
+    <string name="btnCamera">Camera Permission</string>
+    <string name="btnGalery">Gallery Permission</string>
+    <string name="btnPdf">PDF Permission</string>
+    <string name="settings">Setting</string>
+    <string name="message_no_storage_permission_snackbar">Goto Settings</string>
 </resources>
