@@ -36,8 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
         btnFeedback.setOnClickListener {
             val intent = Intent(
-                this@MainActivity,LayoutActivity::class.java
-            )
+                this@MainActivity,LayoutActivity::class.java)
             startActivity(intent)
         }
         btnRecycle.setOnClickListener {

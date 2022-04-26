@@ -76,7 +76,7 @@ class MaterialActivity : AppCompatActivity() {
             etPhone.requestFocus()
             return false
         }
-        if (etPswd.getText().toString().trim() == "") {
+        if (etPswd.text.toString().trim() == "") {
             etPswd.error = "Password Required";
             etPswd.requestFocus()
             return false

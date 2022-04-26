@@ -26,14 +26,11 @@ class DisplayToast : AppCompatActivity() {
             Toast.makeText(this@DisplayToast, "Toast", Toast.LENGTH_LONG).show();
 
         }
-        btnToastCustom.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(view: View?) {
-                Toast(this@DisplayToast).showCustomToast(
-                    "Hello! This is a custom Toast!",
-                    this@DisplayToast
-                )
-            }
-        })
+        btnToastCustom.setOnClickListener {
+            Toast(this@DisplayToast).showCustomToast(
+                "Hello! This is a custom Toast!",
+                this@DisplayToast)
+        }
         btnToastMaterial.setOnClickListener {
             Snackbar.make(
                 linearToast, "Snackbar- showing a Toast Message",
