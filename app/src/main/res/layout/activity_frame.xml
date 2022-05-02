@@ -1,149 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ll_linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:measureAllChildren="true"
-    android:orientation="vertical"
-     tools:context="com.example.myapplication.Layouts.FeedbackActivity">
+    tools:context=".layout.FrameActivity">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:measureAllChildren="true"
         android:orientation="vertical">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvTitle_frame"
-            style="@style/bold_20_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="@string/form_text_title"
-            android:textColor="#808080"
-            android:textSize="25dp" />
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_name_frame"
-            style="@style/bold_20_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/border"
-            android:focusable="true"
-            android:hint="@string/et_name"
-            android:padding="10dp"
-            android:textColorHint="#808080"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_email_frame"
-            style="@style/bold_20_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/border"
-            android:focusable="true"
-            android:hint="@string/et_email"
-            android:padding="10dp"
-            android:textColorHint="#808080"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/sp_praise_frame"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/border"
-                android:focusable="true"
-                android:padding="15dp"
-                android:spinnerMode="dialog" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:layout_gravity="right"
-                android:layout_marginTop="-40dp"
-                android:layout_marginRight="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/drop_down" />
-        </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_feedback_frame"
-            style="@style/bold_20_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/border"
-            android:focusable="true"
-            android:hint="@string/et_feedback"
-            android:lines="5"
-            android:padding="10dp"
-            android:textColorHint="#808080" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
-
-            <androidx.appcompat.widget.AppCompatCheckBox
-                android:id="@+id/chk_praise_frame"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:buttonTint="@color/white"
-                android:textColor="@color/white"
-                tools:ignore="TouchTargetSizeCheck" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_remember_frame"
+                android:id="@+id/tvTitle_frame"
                 style="@style/bold_20_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/form_text_title"
+                android:textColor="#808080"
+                android:textSize="25dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_name_frame"
+                style="@style/bold_20_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/chk_praise"
-                android:text="@string/tv_check"
-                android:textColor="@color/white" />
+                android:background="@drawable/border"
+                android:focusable="true"
+                android:hint="@string/et_name"
+                android:padding="10dp"
+                android:textColorHint="#808080"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_email_frame"
+                style="@style/bold_20_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:focusable="true"
+                android:hint="@string/et_email"
+                android:padding="10dp"
+                android:textColorHint="#808080"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_praise_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:focusable="true"
+                    android:padding="15dp"
+                    android:spinnerMode="dialog" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/drop_down" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_feedback_frame"
+                style="@style/bold_20_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:focusable="true"
+                android:hint="@string/et_feedback"
+                android:lines="5"
+                android:padding="10dp"
+                android:textColorHint="#808080" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/chk_praise_frame"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_remember_frame"
+                    style="@style/bold_20_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/chk_praise"
+                    android:text="@string/tv_check"
+                    android:textColor="@color/white" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_feedback_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/white"
+                android:foreground="@drawable/ripple_bg"
+                android:text="@string/btn_send"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView_frm"
+                style="@style/bold_20_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#808080" />
         </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_feedback_frame"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/border"
-            android:backgroundTint="@color/white"
-            android:foreground="@drawable/ripple_bg"
-            android:text="@string/btn_send"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            tools:ignore="TextContrastCheck" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView_frm"
-            style="@style/bold_20_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textColor="#808080" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-</FrameLayout>
+    </FrameLayout>
+</ScrollView>

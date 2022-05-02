@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    tools:context=".layout.RelativeActivity"
     android:background="@drawable/background"
-    tools:context=".layout.RelativeActivity">
-    tools:context="com.example.myapplication.Layouts.RelativeActivity">
-
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    >
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvTitle_rel"
         style="@style/bold_20_text"
@@ -139,3 +142,4 @@
         android:textColor="#808080" />
 
 </RelativeLayout>
+</ScrollView>
