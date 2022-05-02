@@ -8,15 +8,18 @@ import androidx.fragment.app.FragmentActivity
 import com.example.myapplication.OtherVIew.OtherViewActivity
 import com.example.myapplication.RecycleViewPractical.RecycleActivity
 import com.example.myapplication.UI_Widgets.DisplayMessageActivity
+import com.example.myapplication.architecture.ArchitectureActivity
 import com.example.myapplication.layout.LayoutActivity
 import com.example.myapplication.permission.PermissionActivity
 import com.example.myapplication.webService.WebServiceActivity
+import kotlinx.android.synthetic.main.activity_main.btnArchitecture
 import kotlinx.android.synthetic.main.activity_main.btnFeedback
 import kotlinx.android.synthetic.main.activity_main.btnForm
 import kotlinx.android.synthetic.main.activity_main.btnFragment
 import kotlinx.android.synthetic.main.activity_main.btnPermission
 import kotlinx.android.synthetic.main.activity_main.btnOtherView
 import kotlinx.android.synthetic.main.activity_main.btnRecycle
+import kotlinx.android.synthetic.main.activity_main.btnWebService
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,12 +60,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, OtherViewActivity::class.java)
             startActivity(intent)
         }
-        val btnWebService : Button = findViewById(R.id.btnWebService)
 
         btnWebService.setOnClickListener {
             val intent = Intent(this@MainActivity, WebServiceActivity::class.java)
             startActivity(intent)
         }
+       btnArchitecture.setOnClickListener {
+           val intent = Intent(this@MainActivity, ArchitectureActivity::class.java)
+           startActivity(intent)
+       }
     }
 
 }

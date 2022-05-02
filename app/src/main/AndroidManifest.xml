@@ -80,18 +80,6 @@
         <activity
             android:name=".UI_Widgets.DisplayMessageActivity"
             android:exported="true" />
-        <activity
-            android:name=".Layouts.FrameActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Layouts.ConstraintActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Layouts.GridActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Layouts.LayoutActivity"
-            android:exported="true" />
 
         <meta-data
             android:name="com.google.android.actions"
@@ -140,11 +128,11 @@
             android:name=".Fragment.JetpackActivity"
             android:exported="true" />
         <activity
-            android:name=".Fragment.FragmentActivity"
-            android:exported="false" />
+            android:name="com.example.myapplication.Fragment.FragmentActivity"
+            android:exported="true" />
         <activity
             android:name=".Fragment.FragmentContainActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Fragment.BottomNavigationActivity"
             android:exported="true"

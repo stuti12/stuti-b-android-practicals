@@ -26,8 +26,9 @@ class LoginActivity : AppCompatActivity() {
 
         loginmodel.pswd.observe(this){
            binding.tvDontHaveAnAccount.text = loginmodel.pswd.value
-            Toast.makeText(this,tvinverse.getCustomText(),Toast.LENGTH_LONG).show()
+
         }
+        Toast.makeText(this,tvinverse.getCustomText(),Toast.LENGTH_LONG).show()
     }
 }
 
